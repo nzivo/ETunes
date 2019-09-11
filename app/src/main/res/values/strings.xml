@@ -5,6 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_library">Library</string>
     <string name="title_music">Music</string>
+    <string name="all_songs">All Songs</string>
     <string name="title_equalizer">Equalizer</string>
     <string name="title_search">Search</string>
     <string name="title_settings">Settings</string>
@@ -24,4 +25,6 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="initializing">Initializing</string>
 </resources>

@@ -9,24 +9,123 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/AlbumArtContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042">
 
         <info.abdolahi.CircularMusicProgressBar
-            android:paddingTop="10dp"
             android:id="@+id/album_art"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
+            android:paddingTop="10dp"
             android:src="@drawable/album_art"
             app:border_color="@color/colorPrimaryDark"
             app:border_width="5dp"
             app:centercircle_diammterer="2"
+            app:draw_anticlockwise="false"
             app:progress_color="@color/colorAccent"
-            app:progress_startAngle="0"
-            app:draw_anticlockwise="false"/>
+            app:progress_startAngle="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/viewAllMedia"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="View all media" />
+
+        <TextView
+            android:id="@+id/audioName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="480dp"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/SkipBwdBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/previous_btn" />
+
+            <Button
+                android:id="@+id/BwdBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/fast_rewind_btn" />
+
+            <Button
+                android:id="@+id/playBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/btn_play" />
+
+            <Button
+                android:id="@+id/FwdBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/fast_forward_btn" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/next_btn" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="43dp" />
 
     </LinearLayout>
 
