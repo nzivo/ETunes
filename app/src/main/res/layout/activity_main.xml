@@ -47,7 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,13 +66,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="480dp"
             android:textSize="16sp"
             android:text="TextView"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="162dp"
             tools:layout_editor_absoluteY="178dp" />
+
+
+        <TextView
+            android:id="@+id/playerArtistName"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:text="Jay-Z" />
+
+
+        <TextView
+            android:id="@+id/playerAlbumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="4dp"
+            android:text="Blueprint3" />
 
         <LinearLayout
             android:id="@+id/buttonLayout"

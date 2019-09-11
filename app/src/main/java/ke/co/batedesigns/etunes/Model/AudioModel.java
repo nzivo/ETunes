@@ -3,10 +3,12 @@ package ke.co.batedesigns.etunes.Model;
 import java.io.Serializable;
 
 public class AudioModel implements Serializable {
-    String aPath;
-    String aName;
-    String aAlbum;
-    String aArtist;
+    private String aPath;
+    private String aName;
+    private String aAlbum;
+    private String aArtist;
+    private int aDuration;
+    private int aYear;
 
     public String getaPath() {
         return aPath;
@@ -38,5 +40,21 @@ public class AudioModel implements Serializable {
 
     public void setaArtist(String aArtist) {
         this.aArtist = aArtist;
+    }
+
+    public int getaDuration() {
+        return aDuration;
+    }
+
+    public void setaDuration(int aDuration) {
+        this.aDuration = aDuration;
+    }
+
+    public int getaYear() {
+        return aYear;
+    }
+
+    public void setaYear(int aYear) {
+        this.aYear = aYear;
     }
 }

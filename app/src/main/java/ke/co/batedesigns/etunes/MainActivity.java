@@ -69,13 +69,20 @@ public class MainActivity extends AppCompatActivity {
         audio = (AudioModel) intent.getSerializableExtra("audio");
 
         TextView audioName = findViewById(R.id.audioName);
+        TextView artistName = findViewById(R.id.playerArtistName);
+        TextView albumName = findViewById(R.id.playerAlbumName);
         Button playBtn = findViewById(R.id.playBtn);
         Button viewAllMediaBtn = findViewById(R.id.viewAllMedia);
 
         if(audio!=null){
             audioName.setText(audio.getaName());
+            artistName.setText(audio.getaArtist());
+            albumName.setText(audio.getaAlbum());
+
         }else{
-            audioName.setText(R.string.initializing);
+            audioName.setText(R.string.unknown);
+            artistName.setText(R.string.unknown);
+            albumName.setText(R.string.unknown);
         }
 
 

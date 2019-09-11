@@ -40,7 +40,10 @@ public class AudioListAdapter extends RecyclerView.Adapter<AudioListAdapter.Audi
 
     @Override
     public void onBindViewHolder(@NonNull AudioViewHolder audioViewHolder, int i) {
+        String album = "Album: ";
         audioViewHolder.mTextView.setText(audioDataSet.get(i).getaName());
+        audioViewHolder.artistTextView.setText(audioDataSet.get(i).getaArtist());
+        audioViewHolder.albumTextView.setText(audioDataSet.get(i).getaAlbum());
     }
 
     @Override
@@ -52,12 +55,18 @@ public class AudioListAdapter extends RecyclerView.Adapter<AudioListAdapter.Audi
         Context nContext;
         List<AudioModel> audioList;
         public TextView mTextView;
+        public TextView albumTextView;
+        public TextView artistTextView;
+        public TextView yearTextView;
 
         public AudioViewHolder(Context context,List<AudioModel> audioModelList, View v) {
             super(v);
             nContext = context;
             audioList = audioModelList;
             mTextView = v.findViewById(R.id.audioName);
+            albumTextView = v.findViewById(R.id.albumName);
+            artistTextView = v.findViewById(R.id.artistName);
+            yearTextView = v.findViewById(R.id.year);
 
             v.setOnClickListener(this);
         }

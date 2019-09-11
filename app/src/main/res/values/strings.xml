@@ -26,5 +26,8 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
-    <string name="initializing">Initializing</string>
+    <string name="initializing">Initializing ...</string>
+    <string name="unknown">Unknown</string>
+    <string name="album">Album: </string>
+    <string name="artist">Artist: </string>
 </resources>
