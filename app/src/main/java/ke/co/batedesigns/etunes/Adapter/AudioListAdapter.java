@@ -44,6 +44,7 @@ public class AudioListAdapter extends RecyclerView.Adapter<AudioListAdapter.Audi
         audioViewHolder.mTextView.setText(audioDataSet.get(i).getaName());
         audioViewHolder.artistTextView.setText(audioDataSet.get(i).getaArtist());
         audioViewHolder.albumTextView.setText(audioDataSet.get(i).getaAlbum());
+        audioViewHolder.yearTextView.setText(audioDataSet.get(i).getaYear());
     }
 
     @Override

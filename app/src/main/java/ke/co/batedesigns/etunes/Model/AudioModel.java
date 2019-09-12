@@ -8,7 +8,7 @@ public class AudioModel implements Serializable {
     private String aAlbum;
     private String aArtist;
     private int aDuration;
-    private int aYear;
+    private String aYear;
 
     public String getaPath() {
         return aPath;
@@ -50,11 +50,11 @@ public class AudioModel implements Serializable {
         this.aDuration = aDuration;
     }
 
-    public int getaYear() {
+    public String getaYear() {
         return aYear;
     }
 
-    public void setaYear(int aYear) {
+    public void setaYear(String aYear) {
         this.aYear = aYear;
     }
 }

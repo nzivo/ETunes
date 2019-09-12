@@ -35,27 +35,33 @@
             <TextView
                 android:id="@+id/audioName"
                 android:layout_weight="1"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Placeholder" />
+                android:text="Placeholder"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:maxLines="1"/>
             <TextView
                 android:id="@+id/artistName"
                 android:layout_weight="1"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="italic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimaryDark"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:text="Jay-Z" />
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:weightSum="3">
                 <TextView
                     android:id="@+id/albumName"
@@ -64,7 +70,10 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
                     android:layout_marginEnd="4dp"
-                    android:text="Blueprint3" />
+                    android:text="Blueprint3"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
                 <TextView
                     android:id="@+id/durationTime"
                     android:layout_weight="1"

@@ -70,8 +70,13 @@
             android:text="TextView"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             tools:layout_editor_absoluteX="162dp"
-            tools:layout_editor_absoluteY="178dp" />
+            tools:layout_editor_absoluteY="178dp"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="1"/>
 
 
         <TextView
@@ -81,7 +86,12 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
             android:layout_gravity="center_horizontal"
-            android:text="Jay-Z" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Jay-Z"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="1" />
 
 
         <TextView
@@ -90,8 +100,12 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
             android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="4dp"
-            android:text="Blueprint3" />
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Blueprint3"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="1" />
 
         <LinearLayout
             android:id="@+id/buttonLayout"

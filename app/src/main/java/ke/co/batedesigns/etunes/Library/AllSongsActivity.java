@@ -62,9 +62,10 @@ public class AllSongsActivity extends AppCompatActivity {
         final List<AudioModel> tempAudioList = new ArrayList<>();
 
         Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-        String[] projection = {MediaStore.Audio.AudioColumns.DATA, MediaStore.Audio.AudioColumns.ALBUM, MediaStore.Audio.ArtistColumns.ARTIST,MediaStore.Audio.AudioColumns.YEAR};
+        String[] projection = {MediaStore.Audio.AudioColumns.DATA, MediaStore.Audio.AudioColumns.ALBUM, MediaStore.Audio.ArtistColumns.ARTIST,MediaStore.Audio.AudioColumns.YEAR,};
         Cursor c = context.getContentResolver().query(uri,
                 projection,
+                null,
                 null,
                 null,
                 null);
@@ -77,7 +78,7 @@ public class AllSongsActivity extends AppCompatActivity {
                 String path = c.getString(0);
                 String album = c.getString(1);
                 String artist = c.getString(2);
-                int year = c.getInt(3);
+                String year = c.getString(3);
 
                 String name = path.substring(path.lastIndexOf("/") + 1);
 
