@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_music:
-                    Intent allMusicIntent = new Intent(MainActivity.this, AllSongsActivity.class);
+                    Intent allMusicIntent = new Intent(MainActivity.this, LibraryActivity.class);
                     startActivity(allMusicIntent);
                     return true;
                 case R.id.navigation_equalizer:
